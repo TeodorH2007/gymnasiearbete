@@ -31,3 +31,13 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+#match-historik li {
+  margin-top: 10px;
+  border: white solid 1px;
+}
+
+#match-historik ul {
+  flex-direction: column-reverse;
+  display: flex;
+}
