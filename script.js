@@ -7,7 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
       ol.type = "1";
       data.bets.forEach((b) => {
         const li = document.createElement("li");
-        li.textContent = b.match;
+        li.textContent =
+          "Match: " +
+          b.match +
+          " - " +
+          b.timestamp +
+          " - Odds: " +
+          b.odds +
+          "x";
         if (b.winner === b["real-winner"]) {
           li.classList.add("match-correct");
         } else {

@@ -26,10 +26,10 @@ body {
 }
 
 .header {
-  background: black;
+  background: rgb(23, 23, 23);
   padding: var(--spacing) 0;
   border-bottom: 1px solid var(--border);
-  border-bottom: solid 2px white;
+  border-bottom: solid 2px var(--primary-color);
 }
 
 .header .container {
@@ -41,6 +41,7 @@ body {
 .header-rubrik {
   color: white;
   font-size: 1.25rem;
+  outline: 2px var(--primary-color);
 }
 
 .nav-menu {
@@ -74,13 +75,15 @@ a:hover {
 }
 
 #match-historik li {
+  display: list-item;
   margin-top: 10px;
   border: 1px solid var(--background-color);
-  padding: 0.5rem;
+  padding: 0.75rem;
   border-radius: 5px;
   background-color: black;
   color: var(--font-color);
   list-style-position: outside;
+  text-shadow: 2px 2px 4px black;
 }
 
 #match-historik li.match-correct {
@@ -92,8 +95,19 @@ a:hover {
 }
 
 #match-historik ol {
-  display: block;
+  display: flex;
+  flex-direction: column-reverse;
   list-style-type: decimal;
   list-style-position: outside;
   padding-left: 1.5rem;
+}
+
+.intro-text {
+  text-align: center;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  height: auto;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
