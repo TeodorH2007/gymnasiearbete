@@ -42,6 +42,7 @@ body {
   color: white;
   font-size: 1.25rem;
   outline: 2px var(--primary-color);
+  text-shadow: 2px 2px 4px black;
 }
 
 .nav-menu {
@@ -63,14 +64,25 @@ body {
   text-align: center;
   margin-top: 20px;
   font-family: Arial, sans-serif;
+  text-shadow: 2px 2px 4px black;
 }
 
 a {
   color: var(--font-color);
   text-decoration: none;
+  text-shadow: 2px 2px 4px black;
 }
 
 a:hover {
+  text-decoration: underline;
+}
+
+h2,
+h3 {
+  margin-left: 0.5rem;
+}
+
+h3 {
   text-decoration: underline;
 }
 
@@ -99,7 +111,7 @@ a:hover {
   flex-direction: column-reverse;
   list-style-type: decimal;
   list-style-position: outside;
-  padding-left: 1.5rem;
+  padding-left: 2.5rem;
 }
 
 .intro-text {
@@ -110,4 +122,11 @@ a:hover {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
+}
+
+#resultatchart {
+  width: 90%;
+  max-height: 400px;
+  margin: 20px 0;
 }

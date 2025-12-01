@@ -21,18 +21,24 @@
     <h1 class="rubrik">Analys av AI-program som förutser Matchresultat.</h1>
     <div>
       <p class="intro-text">
-        Programmet har totalt förutsett 259 matcher under november månad. Om man
-        kollar på oddsen från varje match programmet förutsätt så borde vi ha en
-        win chance på
+        Programmet har totalt förutsett 271 matcher under november månad. Om man
+        kollar på oddsen från varje förutsädd match så borde vi ha en win chance
+        på 44.42% enligt oddsen. Ai-programmet lyckades förutse 136 av dessa
+        korrekt. Vilket ger oss en win chance på 50.18%.
       </p>
-    </div>
-    <div class="resultat-graf">
+      <p class="intro-text">
+        Detta ger oss en väldigt stark EV (Expected Value) på 5.76%. Detta
+        innebär att i snitt slår programmet marknaden med 5,76% på varje spel.
+      </p>
       <h2>Resultat:</h2>
-    </div>
-    <div>
+      <div id="resultat-graph">
+        <canvas id="resultatchart" width="400" height="200"></canvas>
+      </div>
       <h2>Historik över förustedda matcher:</h2>
       <div id="match-historik"></div>
     </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="resultat.js"></script>
   <script src="script.js"></script>
 </html>

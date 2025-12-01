@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
           "Match: " +
           b.match +
           " - " +
-          b.timestamp +
+          b.match_time +
           " - Odds: " +
           b.odds +
           "x";
