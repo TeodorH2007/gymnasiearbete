@@ -1,7 +1,7 @@
 :root {
   --primary-color: #34b238;
   --font-color: white;
-  --background-color: rgb(40, 40, 40);
+  --background-color: rgb(53, 53, 53);
   --spacing: 1.2rem;
   --font-family: Arial, sans-serif;
 }
@@ -43,21 +43,6 @@ body {
   font-size: 1.25rem;
   outline: 2px var(--primary-color);
   text-shadow: 2px 2px 4px black;
-}
-
-.nav-menu {
-  position: static;
-  width: auto;
-  list-style: none;
-  display: flex;
-  gap: var(--spacing);
-}
-
-.nav-menu a {
-  display: block;
-  padding: var(--spacing);
-  text-decoration: none;
-  color: white;
 }
 
 .rubrik {

@@ -20,7 +20,7 @@ fetch("total.json")
           {
             label: "Win chance (%)",
             data: winRates,
-            borderColor: "green",
+            borderColor: "#34b238",
             tension: 0,
           },
         ],
