@@ -18,7 +18,7 @@ fetch("total.json")
         labels: labels,
         datasets: [
           {
-            label: "Win chance (%)",
+            label: "Vinstchans (%)",
             data: winRates,
             borderColor: "#34b238",
             tension: 0,
