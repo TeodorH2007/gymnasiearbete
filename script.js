@@ -5,20 +5,20 @@ document.addEventListener("DOMContentLoaded", () => {
       const container = document.getElementById("match-historik");
       const ol = document.createElement("ol");
       ol.type = "1";
-      data.bets.forEach((b) => {
+      data.bets.forEach((bet) => {
         const li = document.createElement("li");
         li.textContent =
           "Match: " +
-          b.match +
+          bet.match +
           " - " +
-          b.match_time +
+          bet.match_time +
           " - Odds: " +
-          b.odds +
+          bet.odds +
           "x";
-        if (b.winner === b["real-winner"]) {
-          li.classList.add("match-correct");
+        if (bet.winner === bet["real-winner"]) {
+          li.classList.add("korrekt");
         } else {
-          li.classList.add("match-incorrect");
+          li.classList.add("felaktig");
         }
         ol.appendChild(li);
       });

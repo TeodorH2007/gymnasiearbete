@@ -83,11 +83,11 @@ h3 {
   text-shadow: 2px 2px 4px black;
 }
 
-#match-historik li.match-correct {
+#match-historik li.korrekt {
   background-color: #2e7d32;
 }
 
-#match-historik li.match-incorrect {
+#match-historik li.felaktig {
   background-color: #b71c1c;
 }
 
